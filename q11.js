@@ -25,31 +25,32 @@ Object.prototype.valueOf.call({}, {});
 
 Object.prototype.toString.call({}, {});
 
+Object.prototype.valueOf = () => 300;
+
 Object.prototype.toString = () => {};
 
 // 加号转换 先转字符串
 
-// 返回什么？
-let obj = {
-  //
-  [Symbol.toPrimitive]() {
-    return 200;
-  },
-  valueOf() {
-    return 300;
-  },
-  toString() {
-    return "Hello";
-  }
-};
-console.log(obj + 200);
+// // 返回什么？
+// let obj = {
+//   //
+//   // [Symbol.toPrimitive]() {
+//   //   return 200;
+//   // },
+//   valueOf() {
+//     return 300;
+//   },
+//   toString() {
+//     return "Hello";
+//   }
+// };
+
+// obj.valueOf()
+
+// console.log(obj + 200);
 
 // 对象转换的规则，会先调用内置的 [ToPrimitive] 函数，其规则逻辑如下：
-
 // 如果部署了 Symbol.toPrimitive 方法，优先调用再返回；
-
 // 调用 valueOf()，如果转换为基础类型，则返回；
-
 // 调用 toString()，如果转换为基础类型，则返回；
-
 // 如果都没有返回基础类型，会报错。
