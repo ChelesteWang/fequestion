@@ -1,0 +1,29 @@
+.lwj1 {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  background: green;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+}
+.lwj1 .item1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.lwj2 {
+  height: 400px;
+  width: 400px;
+  background: green;
+  position: relative;
+}
+.lwj2 .item2 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
