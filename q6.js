@@ -41,3 +41,6 @@ personA.show3.call(personB)();
 personA.show4()();
 personA.show4().call(personB);
 personA.show4.call(personB)();
+
+//嘉然戴安娜 personA personB / personA personA/ window personB window  /personA personA personB
+//关注嘉然顿顿解馋 我是嘉然戴安娜
